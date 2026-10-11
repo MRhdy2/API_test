@@ -1,9 +1,0 @@
-{
-    "code": 20000,
-    "data": {
-        "records": [],
-        "scheduleNoStatus": "3",
-        "weightNo": "3567890"
-    },
-    "message": "操作成功"
-}

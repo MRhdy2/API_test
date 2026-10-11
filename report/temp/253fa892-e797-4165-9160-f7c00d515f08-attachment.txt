@@ -1,1 +1,0 @@
-{"code":20000,"data":{"carrierName":"\u957f\u51e1\u8d38\u6613\u6709\u9650\u516c\u53f8","driverName":"\u674e\u65af","scheduleNo":"DDU202609230001","scheduleStatus":3,"scheduleStatusDesc":"\u5f85\u786e\u8ba4","vehicleNo":"\u5dddAL6826"},"message":"\u64cd\u4f5c\u6210\u529f"}

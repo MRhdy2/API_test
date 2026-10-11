@@ -1,7 +1,0 @@
-{
-    "code": 20000,
-    "data": true,
-    "logisticsStatus": "1",
-    "message": "操作成功",
-    "scheduleNo": "DDU202609230001"
-}

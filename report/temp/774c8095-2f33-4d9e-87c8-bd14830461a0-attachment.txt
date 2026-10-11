@@ -1,6 +1,0 @@
-{
-    "error_code": "0000",
-    "message": "提交订单成功",
-    "orderNumber": "202609230001",
-    "userId": "127839112"
-}

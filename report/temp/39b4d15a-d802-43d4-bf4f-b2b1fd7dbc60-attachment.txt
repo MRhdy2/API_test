@@ -1,2 +1,0 @@
-预期结果：{'message': 'success'}
-实际结果：{'message': 'success'}

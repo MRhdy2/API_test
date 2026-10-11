@@ -1,7 +1,0 @@
-{
-    "error": "",
-    "error_code": "0000",
-    "queryTime": "2026-09-29 10:00:00",
-    "status": "0",
-    "translate_language": "zh-CN"
-}

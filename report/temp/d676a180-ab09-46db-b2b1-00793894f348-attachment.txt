@@ -1,1 +1,0 @@
-{"code":20000,"data":{"current":"1","pages":"1","records":[{"carrierName":"\u957f\u51e1\u8d38\u6613\u6709\u9650\u516c\u53f8","costBillId":"DZ202609230001","freightPrice":53,"totalMoney":"7950"}],"size":"200","total":"1"},"message":"\u64cd\u4f5c\u6210\u529f"}

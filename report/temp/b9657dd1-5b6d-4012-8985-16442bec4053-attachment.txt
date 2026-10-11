@@ -1,1 +1,0 @@
-{"json": {"scheduleNo": "DDU202609230001", "actionTime": "2026-10-09 13:55:29", "boxSpec": "40尺寸", "containerNo": "AJ-YJ-20-0006", "vehicleNo": "晋WC6799", "wareHouseName": "原料生产基地", "wareHouseAddr": "翠屏长江之源", "weightNo": "3567890", "materialList": [{"materialCode": "202306281022", "materialName": "高粱", "materialUnit": "KG", "materialNum": "150.125"}]}}

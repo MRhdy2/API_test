@@ -24,7 +24,6 @@ def configure_utf8_output():
         if callable(reconfigure):
             reconfigure(encoding='utf-8', errors='replace')
 
-
 configure_utf8_output()
 
 if __name__ == '__main__':

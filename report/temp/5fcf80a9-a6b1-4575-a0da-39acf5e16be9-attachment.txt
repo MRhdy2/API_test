@@ -1,1 +1,0 @@
-{"json": {"bizVehicleType": "2", "password": "202cb962ac59075b964b07152d234b70", "carrierName": "自动化测试车队", "creditIdentifier": "91530425MA6Q6UM9XF", "belong": 1, "legalPerson": "张三", "transLicenseNum": "JH789DFG3578032", "contactName": "李四", "contactTel": "13800000000", "contactEmail": "2569433010@qq.com", "type": "2"}}

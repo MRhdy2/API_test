@@ -1,1 +1,0 @@
-{"code":20000,"data":{"current":1,"pages":"1","records":[{"carrierName":"\u957f\u51e1\u8d38\u6613\u6709\u9650\u516c\u53f8","chargeId":"CHARGE202609230001","createTime":"2026-09-29 10:00:00","driverName":"\u674e\u65af","id":"SCHEDULE202609230001","scheduleNo":"DDU202609230001"}],"size":20,"total":"1"},"message":"\u64cd\u4f5c\u6210\u529f"}

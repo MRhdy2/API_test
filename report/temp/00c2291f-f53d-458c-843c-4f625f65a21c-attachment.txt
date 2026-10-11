@@ -1,1 +1,0 @@
-{"code":20000,"data":true,"logisticsStatus":"1","message":"\u64cd\u4f5c\u6210\u529f","scheduleNo":"DDU202609230001"}
