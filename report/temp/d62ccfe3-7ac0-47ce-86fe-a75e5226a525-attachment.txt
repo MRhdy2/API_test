@@ -1,0 +1,15 @@
+{
+    "code": 20000,
+    "data": {
+        "current": 1,
+        "pages": "1",
+        "records": [
+            {
+                "carrierId": "202609230001",
+                "carrierName": "自动化测试车队"
+            }
+        ],
+        "total": "1"
+    },
+    "message": "操作成功"
+}

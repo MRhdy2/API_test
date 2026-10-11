@@ -1,0 +1,15 @@
+INFO     common.recordlog:conftest.py:27 -------------接口测试开始--------------
+INFO     common.recordlog:sendrequest.py:143 接口名称：司机APP端确认运输
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/api/order/app/schedule/confirm
+INFO     common.recordlog:sendrequest.py:145 请求方式：post
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：司机确认运输
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：{'session': 'local-logistics-session'}
+INFO     common.recordlog:sendrequest.py:155 请求参数：{'json': {'scheduleNo': 'DDU202609230001', 'timeStamp': '1791525329'}}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"code":20000,"data":true,"message":"\u53f8\u673a\u786e\u8ba4\u6210\u529f","scheduleNoStatus":"1"}
+
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'eq': {'code': 20000}}, {'eq': {'scheduleNoStatus': '1'}}]
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'code': 20000}，等于预期结果：{'code': 20000}
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'scheduleNoStatus': '1'}，等于预期结果：{'scheduleNoStatus': '1'}
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:29 -------------接口测试结束--------------

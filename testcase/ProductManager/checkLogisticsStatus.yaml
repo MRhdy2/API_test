@@ -1,0 +1,14 @@
+- baseInfo:
+    api_name: 校验商品物流状态
+    url: /coupApply/cms/checkLogisticsStatus
+    method: post
+    header:
+      Content-Type: application/json;charset=UTF-8
+  testCase:
+    - case_name: 新订单物流状态为待发货
+      json:
+        orderNumber: ${get_extract_data(orderNumber)}
+        timeStamp: ${timestamp()}
+      validation:
+        - eq: { 'error_code': '0000' }
+        - eq: { 'status': '0' }

@@ -1,0 +1,15 @@
+{
+    "cartList": [
+        {
+            "count": 2,
+            "goods_id": "1001",
+            "price": "128"
+        }
+    ],
+    "createTime": "2026-09-29 10:00:00",
+    "error": "",
+    "error_code": "0000",
+    "message": "success",
+    "translate_language": "zh-CN",
+    "userId": "127839112"
+}

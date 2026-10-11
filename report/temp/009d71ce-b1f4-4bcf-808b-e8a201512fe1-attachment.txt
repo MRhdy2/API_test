@@ -1,0 +1,1 @@
+{"json": {"list": [{"itemId": "ITEM202609230001", "itemNum": 100, "splitNum": 50}], "logisticsOrderId": "WL202609230001"}}

@@ -1,0 +1,27 @@
+Cookie:
+  session: local-logistics-session
+token: local-test-token
+goodsIds:
+- '1001'
+- '1002'
+orderNumber: '202609230001'
+userId: '127839112'
+materialIds:
+- '1676511586856882178'
+- '1676511586856882134'
+- '1676511524756882178'
+logisticsOrderNo: DD202609230001
+logisticsItemId: ITEM202609230001
+logisticsOrderId: WL202609230001
+splitItemId: ITEM202609230001
+scheduleNo: DDU202609230001
+scheduleRecordId: SCHEDULE202609230001
+chargeId: CHARGE202609230001
+weightNo: '3567890'
+costBillId: DZ202609230001
+carrierId: '202609230001'
+goodsId:
+- '1001'
+- '1002'
+orderNumber: '202609230002'
+userId: '127839112'

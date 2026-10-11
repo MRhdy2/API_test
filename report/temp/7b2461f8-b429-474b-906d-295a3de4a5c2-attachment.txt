@@ -1,0 +1,12 @@
+{
+    "code": 20000,
+    "data": {
+        "carrierName": "长凡贸易有限公司",
+        "driverName": "李斯",
+        "scheduleNo": "DDU202609230001",
+        "scheduleStatus": 3,
+        "scheduleStatusDesc": "待确认",
+        "vehicleNo": "川AL6826"
+    },
+    "message": "操作成功"
+}

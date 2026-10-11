@@ -1,0 +1,14 @@
+- baseInfo:
+    api_name: 校验商品订单状态
+    url: /coupApply/cms/checkOrderStatus
+    method: post
+    header:
+      Content-Type: application/json;charset=UTF-8
+  testCase:
+    - case_name: 已支付订单状态为0
+      json:
+        orderNumber: ${get_extract_data(orderNumber)}
+        timeStamp: ${timestamp()}
+      validation:
+        - eq: { 'error_code': '0000' }
+        - eq: { 'status': '0' }

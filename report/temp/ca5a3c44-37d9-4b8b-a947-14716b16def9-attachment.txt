@@ -1,0 +1,8 @@
+{
+    "error_code": "0000",
+    "product": {
+        "goodsId": "1001",
+        "name": "示例商品",
+        "price": "128"
+    }
+}

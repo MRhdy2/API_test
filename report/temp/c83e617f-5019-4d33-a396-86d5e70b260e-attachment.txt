@@ -1,0 +1,17 @@
+INFO     common.recordlog:conftest.py:27 -------------接口测试开始--------------
+INFO     common.recordlog:sendrequest.py:143 接口名称：提交订单
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/coupApply/cms/placeAnOrder
+INFO     common.recordlog:sendrequest.py:145 请求方式：post
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：提交订单
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：None
+INFO     common.recordlog:sendrequest.py:155 请求参数：{'json': {'goods_id': '1001', 'number': 2, 'propertyChildIds': '2:9', 'inviter_id': '127839112', 'price': '128', 'freight_insurance': '0.0', 'discount_code': '002399', 'consignee_info': {'name': '张三', 'phone': 13800000000, 'address': '北京市海淀区西三环北路74号院4栋3单元1008'}}}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"error_code":"0000","message":"\u63d0\u4ea4\u8ba2\u5355\u6210\u529f","orderNumber":"202609230002","userId":"127839112"}
+
+INFO     common.recordlog:apiutil.py:160 提取接口的返回值：
+INFO     common.recordlog:apiutil.py:160 提取接口的返回值：
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'eq': {'message': '提交订单成功'}}, {'eq': {'error_code': '0000'}}]
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'message': '提交订单成功'}，等于预期结果：{'message': '提交订单成功'}
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'error_code': '0000'}，等于预期结果：{'error_code': '0000'}
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:29 -------------接口测试结束--------------

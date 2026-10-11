@@ -1,0 +1,20 @@
+{
+    "code": 20000,
+    "data": {
+        "current": 1,
+        "pages": "1",
+        "records": [
+            {
+                "carrierName": "长凡贸易有限公司",
+                "chargeId": "CHARGE202609230001",
+                "createTime": "2026-09-29 10:00:00",
+                "driverName": "李斯",
+                "id": "SCHEDULE202609230001",
+                "scheduleNo": "DDU202609230001"
+            }
+        ],
+        "size": 20,
+        "total": "1"
+    },
+    "message": "操作成功"
+}

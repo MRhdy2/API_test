@@ -1,0 +1,16 @@
+INFO     common.recordlog:conftest.py:27 -------------接口测试开始--------------
+INFO     common.recordlog:sendrequest.py:143 接口名称：获取调度单详情
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/api/order/pc/scheduleDetail/info
+INFO     common.recordlog:sendrequest.py:145 请求方式：post
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：按调度单号获取详情
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：{'session': 'local-logistics-session'}
+INFO     common.recordlog:sendrequest.py:155 请求参数：{'json': {'scheduleNo': 'DDU202609230001'}}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"code":20000,"data":{"carrierName":"\u957f\u51e1\u8d38\u6613\u6709\u9650\u516c\u53f8","driverName":"\u674e\u65af","scheduleNo":"DDU202609230001","scheduleStatus":3,"scheduleStatusDesc":"\u5f85\u786e\u8ba4","vehicleNo":"\u5dddAL6826"},"message":"\u64cd\u4f5c\u6210\u529f"}
+
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'eq': {'code': 20000}}, {'eq': {'message': '操作成功'}}, {'rv': {'code': 20000}}]
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'code': 20000}，等于预期结果：{'code': 20000}
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'message': '操作成功'}，等于预期结果：{'message': '操作成功'}
+INFO     common.recordlog:assertions.py:136 响应结果任意值断言成功
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:29 -------------接口测试结束--------------

@@ -1,0 +1,30 @@
+<environment>
+    <parameter>
+        <key>测试类型</key>
+        <value>API 自动化测试</value>
+    </parameter>
+    <parameter>
+        <key>运行平台</key>
+        <value>macOS 26.4 (Apple Silicon)</value>
+    </parameter>
+    <parameter>
+        <key>Python</key>
+        <value>3.8.10</value>
+    </parameter>
+    <parameter>
+        <key>Allure</key>
+        <value>2.46.1</value>
+    </parameter>
+    <parameter>
+        <key>API Base URL</key>
+        <value>http://127.0.0.1:8787</value>
+    </parameter>
+    <parameter>
+        <key>测试环境</key>
+        <value>本地 Flask 服务</value>
+    </parameter>
+    <parameter>
+        <key>后端入口</key>
+        <value>flaskServer/app.py</value>
+    </parameter>
+</environment>

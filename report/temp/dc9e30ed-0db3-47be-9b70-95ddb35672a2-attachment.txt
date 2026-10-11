@@ -1,0 +1,17 @@
+INFO     common.recordlog:conftest.py:27 -------------接口测试开始--------------
+INFO     common.recordlog:sendrequest.py:143 接口名称：获取调度单页面列表
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/api/order/pc/schedule/findPage
+INFO     common.recordlog:sendrequest.py:145 请求方式：post
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：按调度单号查询列表
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：{'session': 'local-logistics-session'}
+INFO     common.recordlog:sendrequest.py:155 请求参数：{'json': {'current': 1, 'size': 20, 'scheduleMapStatus': 1, 'dataType': '2', 'dataValue': 'DDU202609230001'}}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"code":20000,"data":{"current":1,"pages":"1","records":[{"carrierName":"\u957f\u51e1\u8d38\u6613\u6709\u9650\u516c\u53f8","chargeId":"CHARGE202609230001","createTime":"2026-09-29 10:00:00","driverName":"\u674e\u65af","id":"SCHEDULE202609230001","scheduleNo":"DDU202609230001"}],"size":20,"total":"1"},"message":"\u64cd\u4f5c\u6210\u529f"}
+
+INFO     common.recordlog:apiutil_business.py:179 json提取到参数：{'scheduleRecordId': 'SCHEDULE202609230001'}
+INFO     common.recordlog:apiutil_business.py:179 json提取到参数：{'chargeId': 'CHARGE202609230001'}
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'eq': {'code': 20000}}, {'eq': {'message': '操作成功'}}]
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'code': 20000}，等于预期结果：{'code': 20000}
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'message': '操作成功'}，等于预期结果：{'message': '操作成功'}
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:29 -------------接口测试结束--------------

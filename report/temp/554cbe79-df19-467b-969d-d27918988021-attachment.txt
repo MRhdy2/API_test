@@ -1,0 +1,15 @@
+INFO     common.recordlog:conftest.py:27 -------------接口测试开始--------------
+INFO     common.recordlog:sendrequest.py:143 接口名称：获取下单物料信息
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/api/order/customer/orderPlan/getMaterial
+INFO     common.recordlog:sendrequest.py:145 请求方式：get
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：获取可下单物料列表
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：{'session': 'local-logistics-session'}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"code":20000,"data":true,"material":["1676511586856882178","1676511586856882134","1676511524756882178"],"message":"\u64cd\u4f5c\u6210\u529f"}
+
+INFO     common.recordlog:apiutil_business.py:206 json提取到参数：{'materialIds': ['1676511586856882178', '1676511586856882134', '1676511524756882178']}
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'eq': {'code': 20000}}, {'eq': {'message': '操作成功'}}]
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'code': 20000}，等于预期结果：{'code': 20000}
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'message': '操作成功'}，等于预期结果：{'message': '操作成功'}
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:29 -------------接口测试结束--------------

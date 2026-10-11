@@ -1,0 +1,15 @@
+INFO     common.recordlog:conftest.py:27 -------------接口测试开始--------------
+INFO     common.recordlog:sendrequest.py:143 接口名称：删除购物车商品
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/coupApply/cms/delCart
+INFO     common.recordlog:sendrequest.py:145 请求方式：post
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：正常删除购物车商品
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/x-www-form-urlencoded'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：None
+INFO     common.recordlog:sendrequest.py:152 请求参数：{'data': {'productId': '1001', 'timeStamp': '1791525329'}}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"createTime":"2026-09-29 10:00:00","error":"","error_code":"0000","message":"success","translate_language":"zh-CN","userId":"127839112"}
+
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'eq': {'error_code': '0000'}}, {'eq': {'message': 'success'}}]
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'error_code': '0000'}，等于预期结果：{'error_code': '0000'}
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'message': 'success'}，等于预期结果：{'message': 'success'}
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:29 -------------接口测试结束--------------

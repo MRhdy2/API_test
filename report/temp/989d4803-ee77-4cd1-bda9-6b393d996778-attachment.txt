@@ -1,0 +1,1 @@
+{"error_code":"0000","goodsList":[{"goodsId":"1001","name":"\u793a\u4f8b\u5546\u54c1\u4e00","price":"128"},{"goodsId":"1002","name":"\u793a\u4f8b\u5546\u54c1\u4e8c","price":"256"}]}

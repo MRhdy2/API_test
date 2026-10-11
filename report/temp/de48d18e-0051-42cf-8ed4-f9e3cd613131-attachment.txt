@@ -1,0 +1,30 @@
+INFO     common.recordlog:sendrequest.py:143 接口名称：用户登录
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/dar/user/login
+INFO     common.recordlog:sendrequest.py:145 请求方式：post
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：用户名和密码正确登录验证
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：None
+INFO     common.recordlog:sendrequest.py:152 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+INFO     common.recordlog:sendrequest.py:115 cookie：{'Cookie': {'session': 'local-logistics-session'}}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"error_code":null,"msg":"\u767b\u5f55\u6210\u529f","msg_code":200,"token":"local-test-token"}
+
+INFO     common.recordlog:apiutil.py:160 提取接口的返回值：
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'contains': {'error_code': 'none'}}, {'eq': {'msg': '登录成功'}}]
+INFO     common.recordlog:assertions.py:60 字符串包含断言成功：预期结果【None】,实际结果【[None]】
+INFO     common.recordlog:assertions.py:83 相等断言成功：接口实际结果：{'msg': '登录成功'}，等于预期结果：{'msg': '登录成功'}
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:27 -------------接口测试开始--------------
+INFO     common.recordlog:sendrequest.py:143 接口名称：商品列表
+INFO     common.recordlog:sendrequest.py:144 请求地址：http://127.0.0.1:8787/coupApply/cms/goodsList
+INFO     common.recordlog:sendrequest.py:145 请求方式：Get
+INFO     common.recordlog:sendrequest.py:146 测试用例名称：获取商品列表
+INFO     common.recordlog:sendrequest.py:147 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'token': 'local-test-token'}
+INFO     common.recordlog:sendrequest.py:148 Cookie：None
+INFO     common.recordlog:sendrequest.py:158 请求参数：{'params': {'msgType': 'getHandsetListOfCust', 'page': 1, 'size': 20}}
+INFO     common.recordlog:sendrequest.py:116 接口返回信息：{"error_code":"0000","goodsList":[{"goodsId":"1001","name":"\u793a\u4f8b\u5546\u54c1\u4e00","price":"128"},{"goodsId":"1002","name":"\u793a\u4f8b\u5546\u54c1\u4e8c","price":"256"}]}
+
+INFO     common.recordlog:apiutil_business.py:206 json提取到参数：{'goodsIds': ['1001', '1002']}
+INFO     common.recordlog:assertions.py:185 yaml文件预期结果：[{'contains': {'error_code': '0000'}}]
+INFO     common.recordlog:assertions.py:60 字符串包含断言成功：预期结果【0000】,实际结果【0000】
+INFO     common.recordlog:assertions.py:213 测试成功
+INFO     common.recordlog:conftest.py:29 -------------接口测试结束--------------
