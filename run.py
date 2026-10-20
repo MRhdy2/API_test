@@ -13,6 +13,9 @@ REPORT_DIR = PROJECT_ROOT / 'report'
 ALLURE_TEMP_DIR = REPORT_DIR / 'temp'
 ALLURE_REPORT_DIR = REPORT_DIR / 'allureReport'
 TM_REPORT_DIR = REPORT_DIR / 'tmreport'
+IS_JENKINS = bool(os.environ.get('JENKINS_URL') or
+                  (os.environ.get('WORKSPACE') and os.environ.get('BUILD_NUMBER')))
+ALLURE_RESULTS_DIR = PROJECT_ROOT / 'allure-results' if IS_JENKINS else ALLURE_TEMP_DIR
 
 
 def configure_utf8_output():
@@ -29,15 +32,19 @@ configure_utf8_output()
 if __name__ == '__main__':
 
     if REPORT_TYPE == 'allure':
-        ALLURE_TEMP_DIR.mkdir(parents=True, exist_ok=True)
+        ALLURE_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
         exit_code = pytest.main(
-            ['-s', '-v', f'--alluredir={ALLURE_TEMP_DIR}', str(PROJECT_ROOT / 'testcase'),
+            ['-s', '-v', f'--alluredir={ALLURE_RESULTS_DIR}', str(PROJECT_ROOT / 'testcase'),
              '--clean-alluredir', f'--junitxml={REPORT_DIR / "results.xml"}'])
 
-        shutil.copy(PROJECT_ROOT / 'environment.xml', ALLURE_TEMP_DIR)
+        shutil.copy(PROJECT_ROOT / 'environment.xml', ALLURE_RESULTS_DIR)
+        if IS_JENKINS:
+            print(f'Allure 原始结果已保存到：{ALLURE_RESULTS_DIR}')
+            raise SystemExit(exit_code)
+
         subprocess.run(
             [
-                'allure', 'generate', str(ALLURE_TEMP_DIR),
+                'allure', 'generate', str(ALLURE_RESULTS_DIR),
                 '-o', str(ALLURE_REPORT_DIR), '--clean', '--single-file',
             ],
             check=True,
