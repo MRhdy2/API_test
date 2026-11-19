@@ -1,6 +1,6 @@
 # API_test
 
-一个基于 **Pytest + YAML** 的接口自动化测试项目。测试数据与执行代码分离，覆盖用户管理单接口、商品下单与支付流程，以及物流订单业务链路；运行时支持参数提取、接口关联、断言和测试报告。
+一个基于 **Pytest + YAML** 的接口自动化测试项目。测试数据与执行代码分离，覆盖生产任务管理、设备资源分配及调度执行业务链路；运行时支持参数提取、接口关联、断言和测试报告。
 
 ## 主要功能
 
@@ -15,7 +15,7 @@
 
 | 路径 | 作用 |
 | --- | --- |
-| `testcase/` | 用户管理、商品管理、业务场景和物流场景测试 |
+| `testcase/` | 生产任务管理、设备资源分配及调度执行 |
 | `base/` | 单接口与业务场景的请求、提取和断言封装 |
 | `common/` | YAML、请求、日志、数据库连接等公共模块 |
 | `conf/` | 运行常量与接口环境配置 |
@@ -61,27 +61,6 @@ python run.py
 脚本会执行 `testcase/`，将原始结果写入 `report/temp/`、JUnit 结果写入 `report/results.xml`，并生成 `report/allureReport/index.html`。在 Jenkins 环境中，Allure 原始结果写入 `allure-results/`，供流水线使用。
 
 如需使用 TM 报告，可将 `REPORT_TYPE` 改为 `tm`，并安装对应的 Pytest 报告插件；输出路径为 `report/tmreport/testReport.html`。
-
-## YAML 用例格式
-
-测试文件以 `baseInfo` 描述接口，以 `testCase` 描述用例。以下为简化示例：
-
-```yaml
-- baseInfo:
-    api_name: 查询商品
-    url: /api/products
-    method: get
-    header:
-      Content-Type: application/json
-  testCase:
-    - case_name: 查询商品列表
-      params:
-        page: 1
-      validation:
-        - contains: { 'status_code': 200 }
-      extract:
-        product_id: $.data[0].id
-```
 
 接口主机地址来自 `conf/config.ini` 的 `[api_envi] host`；后续用例可通过 `${get_extract_data(product_id)}` 使用提取值。业务场景用例可参考 `testcase/Business interface/` 和 `testcase/Logistics/`。
 
